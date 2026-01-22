@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+@media print{
+  .Print-None {
+      display: none;
+  }
+}
+
+.AppSelectButtons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px 5px 5px 10px;
+}
+
+.AppSelectButtonItem {
+  width: 180px;
+  height: 30px;
+}
+
+.AppImportButton {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.AppSelectLevel {
+  margin-left: 5px;
+}
+
+.AppSearch {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.AppSearch input {
+  margin-left: 5px;
+}
+
+.AppPolicy {
+  padding: 10px;
+  font-size: 0.6rem;
+}
+
+.SpellItemContainer {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,8 @@
+
+.SpellCardItems {
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
