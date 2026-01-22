@@ -20,7 +20,18 @@ function App() {
     });
 
     if (!content) {
-      content = <div>"{paramName}" という呪文が見つかりません。</div>
+      content = (
+        <div>
+          <p>"{paramName}" という呪文が見つかりません。</p>
+          <p>
+            呪文名は正しく指定する必要があります。<br></br>
+            以下の点に注意してください。<br></br>
+            ・英語名の場合はスペルミスがないか<br></br>
+            ・日本語名の場合は全角カタカナで指定<br></br>
+            ・中黒（・）や長音符（ー）などの抜けがないか<br></br>
+          </p>
+        </div>
+      );
     }
     return content
   }
