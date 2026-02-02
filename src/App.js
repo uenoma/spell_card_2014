@@ -14,7 +14,7 @@ function App() {
     let content = null;
     const spells = dnd5eSpells.spells;
     spells.forEach((spell) => {
-      if ((spell.nameEN.toLowerCase() === paramName.toLowerCase()) || (spell.nameJP === paramName)) {
+      if ((spell.nameEN.toLowerCase() === paramName.toLowerCase()) || (spell.nameJP === paramName) || (spell.nameEN_5e && spell.nameEN_5e.toLowerCase() === paramName.toLowerCase()) || (spell.nameJP_5e && spell.nameJP_5e === paramName)) {
         content = <div className='SpellItemContainer'><SpellItem spellInfo={spell} type='All' key={0} /></div>;
       }
     });
